@@ -61,7 +61,7 @@ install:
   - cp .travis.yml $PLUGIN_NAME
   # checkout piwik in the current directory
   - git clone -q https://github.com/matomo-org/matomo.git matomo
-  - cd piwik
+  - cd matomo
   - git fetch -q --all
   - git submodule update
 
