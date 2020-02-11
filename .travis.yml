@@ -3,8 +3,8 @@
 language: php
 
 php:
-  - 7.2
-  - 7.3
+  - 5.6
+  - 5.5
 #  - hhvm
 
 services:
@@ -60,13 +60,13 @@ install:
   - cp -R .git/ $PLUGIN_NAME/
   - cp .travis.yml $PLUGIN_NAME
   # checkout piwik in the current directory
-  - git clone -q https://github.com/piwik/piwik.git piwik
+  - git clone -q https://github.com/matomo-org/matomo.git matomo
   - cd piwik
   - git fetch -q --all
   - git submodule update
 
   # make sure travis-scripts repo is latest for initial travis setup
-  - '[ -d ./tests/travis/.git ] || sh -c "rm -rf ./tests/travis && git clone https://github.com/piwik/travis-scripts.git ./tests/travis"'
+  - '[ -d ./tests/travis/.git ] || sh -c "rm -rf ./tests/travis && git clone https://github.com/matomo-org/travis-scripts.git ./tests/travis"'
   - cd ./tests/travis ; git checkout master ; cd ../..
 
   - export GENERATE_TRAVIS_YML_COMMAND="php ./tests/travis/generator/main.php generate:travis-yml --plugin=\"Provider\" --dist-trusty --sudo-false --verbose"

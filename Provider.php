@@ -17,6 +17,11 @@ use Piwik\Piwik;
 
 class Provider extends \Piwik\Plugin
 {
+    public function isTrackerPlugin()
+    {
+        return true;
+    }
+
     public function install()
     {
         // add column hostname / hostname ext in the visit table
