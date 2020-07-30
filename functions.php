@@ -24,7 +24,7 @@ function getHostnameName($in)
     if (empty($in) || strtolower($in) === 'ip') {
         return Piwik::translate('General_Unknown');
     }
-    if (($positionDot = strpos($in, '.')) !== false) {
+    if (strpos($in, ' ') === false && ($positionDot = strpos($in, '.')) !== false) {
         return ucfirst(substr($in, 0, $positionDot));
     }
     return $in;
