@@ -2,13 +2,12 @@
 /**
  * Matomo - free/libre analytics platform
  *
- * @link https://matomo.org
+ * @link    https://matomo.org
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 
 namespace Piwik\Plugins\Provider\tests\System;
 
-use Piwik\Plugins\Provider\tests\Fixtures\SimpleFixtureTrackFewVisits;
 use Piwik\Tests\Fixtures\ManyVisitsWithMockLocationProvider;
 use Piwik\Tests\Framework\TestCase\SystemTestCase;
 
@@ -20,7 +19,7 @@ use Piwik\Tests\Framework\TestCase\SystemTestCase;
 class APITest extends SystemTestCase
 {
     /**
-     * @var SimpleFixtureTrackFewVisits
+     * @var ManyVisitsWithMockLocationProvider
      */
     public static $fixture = null; // initialized below class definition
 
@@ -34,19 +33,20 @@ class APITest extends SystemTestCase
 
     public function getApiForTesting()
     {
-        $api = array(
-            'Provider.getProvider'
-        );
+        $api = [
+            'Provider.getProvider',
+        ];
 
-        $apiToTest   = array();
-        $apiToTest[] = array($api,
-            array(
+        $apiToTest   = [];
+        $apiToTest[] = [
+            $api,
+            [
                 'idSite'     => 1,
                 'date'       => self::$fixture->dateTime,
-                'periods'    => array('day'),
-                'testSuffix' => ''
-            )
-        );
+                'periods'    => ['day'],
+                'testSuffix' => '',
+            ],
+        ];
 
         return $apiToTest;
     }

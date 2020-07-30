@@ -2,14 +2,14 @@
 /**
  * Matomo - free/libre analytics platform
  *
- * @link https://matomo.org
+ * @link    https://matomo.org
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  *
  */
+
 namespace Piwik\Plugins\Provider;
 
 use Exception;
-use Piwik\ArchiveProcessor;
 use Piwik\Common;
 use Piwik\Db;
 use Piwik\FrontController;
@@ -46,7 +46,7 @@ class Provider extends \Piwik\Plugin
 
     public function postLoad()
     {
-        Piwik::addAction('Template.footerUserCountry', array('Piwik\Plugins\Provider\Provider', 'footerUserCountry'));
+        Piwik::addAction('Template.footerUserCountry', ['Piwik\Plugins\Provider\Provider', 'footerUserCountry']);
     }
 
     public static function footerUserCountry(&$out)
@@ -65,9 +65,9 @@ class Provider extends \Piwik\Plugin
      */
     public static function getCleanHostname($hostname)
     {
-        $extToExclude = array(
-            'com', 'net', 'org', 'co'
-        );
+        $extToExclude = [
+            'com', 'net', 'org', 'co',
+        ];
 
         $off = strrpos($hostname, '.');
         $ext = substr($hostname, $off);
@@ -94,9 +94,9 @@ class Provider extends \Piwik\Plugin
              *
              * @param string &$cleanHostname The hostname string to display. Set by the event
              *                               handler.
-             * @param string $hostname The full hostname.
+             * @param string  $hostname      The full hostname.
              */
-            Piwik::postEvent('Provider.getCleanHostname', array(&$cleanHostname, $hostname));
+            Piwik::postEvent('Provider.getCleanHostname', [&$cleanHostname, $hostname]);
             if ($cleanHostname !== null) {
                 return $cleanHostname;
             }

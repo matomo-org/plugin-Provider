@@ -2,10 +2,11 @@
 /**
  * Matomo - free/libre analytics platform
  *
- * @link https://matomo.org
+ * @link    https://matomo.org
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  *
  */
+
 namespace Piwik\Plugins\Provider;
 
 use Piwik\Common;
@@ -40,7 +41,7 @@ function getHostnameUrl($in)
     if ($in == DataTable::LABEL_SUMMARY_ROW || empty($in) || strtolower($in) === 'ip') {
         return null;
     }
-    
+
     // if the name is a valid hostname, return a URL - otherwise link to startpage
     if (filter_var($in, FILTER_VALIDATE_DOMAIN, FILTER_FLAG_HOSTNAME)) {
         return "http://" . $in . "/";
