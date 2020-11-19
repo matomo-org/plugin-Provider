@@ -77,6 +77,10 @@ class Provider extends \Piwik\Plugins\UserCountry\Columns\Base
             return false;
         }
 
+        if (defined('PIWIK_TEST_MODE')) {
+            return false; // skip reverse lookup while testing
+        }
+
         $hostname          = $this->getHost($ip);
         $hostnameExtension = ProviderPlugin::getCleanHostname($hostname);
 
