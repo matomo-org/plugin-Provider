@@ -11,6 +11,7 @@ namespace Piwik\Plugins\Provider;
 
 use Piwik\Archive;
 use Piwik\Piwik;
+use Piwik\Plugin;
 
 /**
  * @see plugins/Provider/functions.php
@@ -26,6 +27,9 @@ class API extends \Piwik\Plugin\API
 {
     public function getProvider($idSite, $period, $date, $segment = false)
     {
+        $dir = Plugin\Manager::getPluginDirectory('Provider');
+        require_once $dir . '/functions.php';
+
         Piwik::checkUserHasViewAccess($idSite);
         $archive   = Archive::build($idSite, $period, $date, $segment);
         $dataTable = $archive->getDataTable(Archiver::PROVIDER_RECORD_NAME);
