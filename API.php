@@ -14,11 +14,6 @@ use Piwik\Piwik;
 use Piwik\Plugin;
 
 /**
- * @see plugins/Provider/functions.php
- */
-require_once PIWIK_INCLUDE_PATH . '/plugins/Provider/functions.php';
-
-/**
  * The Provider API lets you access reports for your visitors Internet Providers.
  *
  * @method static \Piwik\Plugins\Provider\API getInstance()
