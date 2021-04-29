@@ -15,6 +15,7 @@
     "forum": "https://forum.matomo.org",
     "source": "https://github.com/matomo-org/plugin-Provider"
   },
+  "wordpress-compatible": false,
   "authors": [
     {
       "name": "Matomo",
