@@ -35,13 +35,6 @@ class Provider extends \Piwik\Plugins\UserCountry\Columns\Base
      */
     public function onNewVisit(Request $request, Visitor $visitor, $action)
     {
-        // Adding &dp=1 will disable the provider plugin, this is an "unofficial" parameter used to speed up log importer
-        $disableProvider = $request->getParam('dp');
-
-        if (!empty($disableProvider)) {
-            return false;
-        }
-
         // if provider info has already been set, abort
         $locationValue = $visitor->getVisitorColumn('location_provider');
         if (!empty($locationValue)) {
@@ -67,6 +60,13 @@ class Provider extends \Piwik\Plugins\UserCountry\Columns\Base
 
         if (!empty($org)) {
             return $org;
+        }
+
+        // Adding &dp=1 will disable the provider plugin, this is an "unofficial" parameter used to speed up log importer
+        $disableProvider = $request->getParam('dp');
+
+        if (!empty($disableProvider)) {
+            return false;
         }
 
         $ip = $userInfo['ip'];
