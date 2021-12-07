@@ -1,0 +1,53 @@
+name: Plugin Provider Tests
+
+on:
+  pull_request:
+  schedule:
+    - cron: '0 0 * * *'
+
+permissions:
+  actions: read
+  checks: none
+  contents: read
+  deployments: none
+  issues: write
+  packages: none
+  pull-requests: write
+  repository-projects: none
+  security-events: none
+  statuses: none
+concurrency:
+  group: ${{ github.head_ref }}
+  cancel-in-progress: true
+
+jobs:
+  PluginTests:
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - type: PluginTests
+            php-versions: '7.4'
+          - type: PluginTests
+            php-versions: '8.0'
+    services:
+      mysql:
+        image: mysql:5.7
+        ports:
+          - 3306:3306
+        env:
+          MYSQL_DATABASE: matomo_tests
+          MYSQL_ALLOW_EMPTY_PASSWORD: yes
+        options: --tmpfs /var/lib/mysql:rw
+    steps:
+      - name: run tests
+        uses: matomo-org/github-action-tests@v1
+        with:
+          git-head: ${{ github.head_ref }}
+          git-sha: ${{ github.event.pull_request.head.sha }}
+          plugin-name: 'Provider'
+          php-version: ${{ matrix.php-versions }}
+          test-type: ${{ matrix.type }}
+          addtion: 'ldap'
+
