@@ -1,7 +1,9 @@
 {
     "Provider": {
         "ColumnProvider": "Proveïdor",
+        "PluginDescription": "Informa del proveïdor de serveis d'Internet dels visitants.",
         "ProviderReportDocumentation": "Aquest informe mostra quin Proveïdor d'Internet han utiltizat els vostres visitants per accedir al lloc. Podeu click al nom del proveïdor per més detalls. %s Si el Matomo no pot determinar el proveïdor del visitant, es mostra la seva adreça IP.",
+        "ProviderReportFooter": "Un proveïdor desconegut significa que no s'ha pogut resoldre l'adreça IP.",
         "WidgetProviders": "Proveïdors"
     }
 }
