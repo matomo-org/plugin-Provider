@@ -1,7 +1,9 @@
 {
     "Provider": {
         "ColumnProvider": "Penyedia",
+        "PluginDescription": "Laporan Penyedia Layanan Internet yang digunakan pengunjung.",
         "ProviderReportDocumentation": "Laporan ini menampilkan Penyedia Layanan Internet yang digunakan oleh pengunjung Anda untuk mengunjungi situs. Anda dapat mengeklik nama penyedia untuk melihat rinciannya. %s Bila Matomo tak dapat menentukan penyedia pengunjung, ini akan ditampikan sebagai IP.",
+        "ProviderReportFooter": "Penyedia yang tidak dikenal berarti alamat IP tidak dapat dicari.",
         "WidgetProviders": "Penyedia"
     }
 }
