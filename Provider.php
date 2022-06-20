@@ -51,7 +51,8 @@ class Provider extends \Piwik\Plugin
 
     public static function footerUserCountry(&$out)
     {
-        $out .= '<h2 piwik-enriched-headline>' . Piwik::translate('Provider_WidgetProviders') . '</h2>';
+        $out .= '<h2 vue-entry="CoreHome.EnrichedHeadline">' . Piwik::translate('Provider_WidgetProviders')
+            . '</h2>';
         $out .= FrontController::getInstance()->fetchDispatch('Provider', 'getProvider');
     }
 
