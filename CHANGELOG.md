@@ -1,5 +1,9 @@
 ## Changelog
 
+### 4.0.4
+
+* Translation updates
+
 ### 4.0.3
 
 * Translation updates
