@@ -1,5 +1,9 @@
 ## Changelog
 
+### 4.0.5
+
+* Remove code for event that does no longer exist
+
 ### 4.0.4
 
 * Translation updates
