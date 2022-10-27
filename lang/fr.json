@@ -1,6 +1,6 @@
 {
     "Provider": {
-        "ColumnProvider": "Forunisseur",
+        "ColumnProvider": "Fournisseur",
         "PluginDescription": "Signale le fournisseur d'accès Internet des visiteurs.",
         "ProviderReportDocumentation": "Ce rapport montre quels fournisseurs d'accès Internet vos visiteurs ont utilisé pour accéder au site web. Vous pouvez cliquer sur le nom d'un fournisseur pour obtenir plus de détails. %s Si Matomo ne peut pas déterminer le fournisseur d'accès d'un visiteur, il est listé comme IP.",
         "ProviderReportFooter": "Fournisseur inconnu signifie que l'adresse IP n'a pas pu être recherchée.",
