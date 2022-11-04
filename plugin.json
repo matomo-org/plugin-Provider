@@ -1,13 +1,13 @@
 {
   "name": "Provider",
-  "version": "4.0.5",
+  "version": "5.0.0",
   "description": "Reports the Internet Service Provider of the visitors.",
   "theme": false,
   "keywords": ["provider", "internet", "service", "report"],
   "license": "GPL v3+",
   "homepage": "https://matomo.org",
   "require": {
-    "matomo": ">=4.0.0-b1,<5.0.0-b1"
+    "matomo": ">=5.0.0-b1,<6.0.0-b1"
   },
   "support": {
     "email": "hello@matomo.org",

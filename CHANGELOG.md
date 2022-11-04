@@ -1,5 +1,9 @@
 ## Changelog
 
+### 5.0.0
+
+* Compatibility with Matomo 5
+
 ### 4.0.5
 
 * Remove code for event that does no longer exist
