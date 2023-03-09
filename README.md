@@ -1,6 +1,6 @@
 # Matomo Provider Plugin
 
-[![Build Status](https://travis-ci.com/matomo-org/plugin-Provider.svg?branch=4.x-dev)](https://travis-ci.com/matomo-org/plugin-Provider)
+[![Build Status](https://github.com/matomo-org/plugin-Provider/actions/workflows/matomo-tests.yml/badge.svg?branch=4.x-dev)](https://github.com/matomo-org/plugin-Provider/actions/workflows/matomo-tests.yml)
 
 ## Description
 
