@@ -50,7 +50,7 @@ class Providers extends RecordBuilder
                 Metrics::INDEX_NB_VISITS_CONVERTED => $row[Metrics::INDEX_NB_VISITS_CONVERTED],
             ];
 
-            $record->sumRowWithLabel($row['label'], $columns);
+            $record->sumRowWithLabel($row['label'] ?? '', $columns);
         }
 
         return [Archiver::PROVIDER_RECORD_NAME => $record];
