@@ -1,5 +1,8 @@
 ## Changelog
 
+### 5.0.2
+* Fixes empty label causing archiving to fail
+
 ### 5.0.1
 
 * Compatibility with Matomo 5.0.0-b4
