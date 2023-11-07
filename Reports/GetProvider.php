@@ -15,6 +15,7 @@ use Piwik\Plugin\Report;
 use Piwik\Plugin\ViewDataTable;
 use Piwik\Plugins\Provider\Columns\Provider;
 use Piwik\Report\ReportWidgetFactory;
+use Piwik\Url;
 use Piwik\Widget\WidgetsList;
 
 class GetProvider extends Report
@@ -45,7 +46,7 @@ class GetProvider extends Report
         if (!Common::getRequestVar('disableLink', 0, 'int')) {
             $message .= ' ' . Piwik::translate(
                     'General_SeeThisFaq',
-                    ['<a href="https://matomo.org/faq/general/faq_52/" rel="noreferrer noopener" target="_blank">', '</a>']
+                    ['<a href="' . Url::addCampaignParametersToMatomoLink('https://matomo.org/faq/general/faq_52/') . '" rel="noreferrer noopener" target="_blank">', '</a>']
                 );
         }
         $view->config->show_footer_message = $message;
