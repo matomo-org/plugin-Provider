@@ -1,6 +1,9 @@
 {
     "Provider": {
         "ColumnProvider": "Hornitzailea",
+        "PluginDescription": "Bisitarien Interneteko zerbitzu-hornitzailearen berri ematen du.",
+        "ProviderReportDocumentation": "Zure bisitariek webgunera sartzeko zein Interneteko zerbitzu-hornitzaile erabiltzen duten erakusten du txosten honek. Hornitzailearen izenean klik eginda xehetasunak ikus ditzakezu. %s Matomok ezin badu zehaztu bisitariaren hornitzailea, IP bezala zerrendatzen du.",
+        "ProviderReportFooter": "Hornitzaile ezezagunak esan nahi du ezin izan dela IP helbidea bilatu.",
         "WidgetProviders": "Hornitzaileak"
     }
 }
