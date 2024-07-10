@@ -1,1 +1,9 @@
-{}
+{
+    "Provider": {
+        "ColumnProvider": "Soláthraí",
+        "PluginDescription": "Tuairiscíonn Soláthraí Seirbhíse Idirlín na gcuairteoirí.",
+        "ProviderReportDocumentation": "Léiríonn an tuarascáil seo na Soláthraithe Seirbhíse Idirlín a d’úsáid do chuairteoirí chun rochtain a fháil ar an suíomh Gréasáin. Is féidir leat cliceáil ar ainm soláthraí le haghaidh tuilleadh sonraí. %s Murar féidir le Matomo soláthraí cuairteora a chinneadh, liostaítear mar IP é.",
+        "ProviderReportFooter": "Ciallaíonn soláthraí anaithnid nach bhféadfaí an seoladh IP a chuardach.",
+        "WidgetProviders": "Soláthraithe"
+    }
+}
