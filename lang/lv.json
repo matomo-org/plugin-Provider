@@ -1,6 +1,9 @@
 {
     "Provider": {
         "ColumnProvider": "Pakalpojumu sniedzējs",
+        "PluginDescription": "Ziņo par apmeklētāju interneta pakalpojumu sniedzēju.",
+        "ProviderReportDocumentation": "Šis ziņojums parāda, kuri interneta pakalpojumu sniedzēji tika izmantoti, lai apmeklētāji piekļūtu vietnei. Klikšķiniet uz pakalpojumu sniedzēja nosaukuma, lai iegūtu vairāk informācijas. %s Ja Matomo nevar noteikt apmeklētāja pakalpojumu sniedzēju, tas tiek norādīts kā IP.",
+        "ProviderReportFooter": "Nezināms pakalpojumu sniedzējs nozīmē, ka IP adresi nevar noskaidrot.",
         "WidgetProviders": "Pakalpojumu sniedzēji"
     }
 }
