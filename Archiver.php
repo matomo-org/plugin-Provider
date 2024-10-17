@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
@@ -11,6 +12,6 @@ namespace Piwik\Plugins\Provider;
 
 class Archiver extends \Piwik\Plugin\Archiver
 {
-    const PROVIDER_RECORD_NAME = 'Provider_hostnameExt';
-    const PROVIDER_FIELD = "location_provider";
+    public const PROVIDER_RECORD_NAME = 'Provider_hostnameExt';
+    public const PROVIDER_FIELD = "location_provider";
 }

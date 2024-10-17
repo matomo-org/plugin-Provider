@@ -13,7 +13,6 @@ namespace Piwik\Plugins\Provider;
 use Exception;
 use Piwik\Common;
 use Piwik\Db;
-use Piwik\FrontController;
 use Piwik\Piwik;
 
 class Provider extends \Piwik\Plugin
@@ -102,5 +101,4 @@ class Provider extends \Piwik\Plugin
             }
         }
     }
-
 }
