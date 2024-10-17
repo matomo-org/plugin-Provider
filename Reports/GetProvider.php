@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
@@ -45,9 +46,9 @@ class GetProvider extends Report
         $message = Piwik::translate("General_Note") . ': ' . Piwik::translate('Provider_ProviderReportFooter', '');
         if (!Common::getRequestVar('disableLink', 0, 'int')) {
             $message .= ' ' . Piwik::translate(
-                    'General_SeeThisFaq',
-                    ['<a href="' . Url::addCampaignParametersToMatomoLink('https://matomo.org/faq/general/faq_52/') . '" rel="noreferrer noopener" target="_blank">', '</a>']
-                );
+                'General_SeeThisFaq',
+                ['<a href="' . Url::addCampaignParametersToMatomoLink('https://matomo.org/faq/general/faq_52/') . '" rel="noreferrer noopener" target="_blank">', '</a>']
+            );
         }
         $view->config->show_footer_message = $message;
     }

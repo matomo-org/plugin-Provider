@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
@@ -15,4 +16,3 @@ namespace Piwik\Plugins\Provider;
 class Controller extends \Piwik\Plugin\Controller
 {
 }
-
