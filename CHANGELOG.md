@@ -1,5 +1,8 @@
 ## Changelog
 
+### 5.0.4
+* Added missing license file
+
 ### 5.0.3
 * Added plugin category for Marketplace
 
