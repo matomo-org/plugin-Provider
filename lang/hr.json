@@ -1,1 +1,9 @@
-{}
+{
+    "Provider": {
+        "ColumnProvider": "Pružatelj usluge",
+        "PluginDescription": "Prikazuje pružatelja internetskih usluga posjetitelja.",
+        "ProviderReportDocumentation": "Ovaj izvještaj prikazuje koje su pružatelje internetskih usluga tvoji posjetitelji koristili za pristup web-stranici. Klikni na ime pružatelja usluge za više detalja. %s Ako Matomo ne može odrediti pružatelja usluge posjetitelja, on ga tada prikazuje kao IP.",
+        "ProviderReportFooter": "Nepoznati pružatelj usluga znači da nije bilo moguće pronaći IP adresu.",
+        "WidgetProviders": "Pružatelji usluge"
+    }
+}
