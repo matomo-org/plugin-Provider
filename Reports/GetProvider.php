@@ -47,7 +47,7 @@ class GetProvider extends Report
         if (!Common::getRequestVar('disableLink', 0, 'int')) {
             $message .= ' ' . Piwik::translate(
                 'General_SeeThisFaq',
-                ['<a href="' . Url::addCampaignParametersToMatomoLink('https://matomo.org/faq/general/faq_52/') . '" rel="noreferrer noopener" target="_blank">', '</a>']
+                [Url::getExternalLinkTag('https://matomo.org/faq/general/faq_52/'), '</a>']
             );
         }
         $view->config->show_footer_message = $message;
