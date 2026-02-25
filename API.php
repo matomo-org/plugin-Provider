@@ -38,7 +38,7 @@ class API extends \Piwik\Plugin\API
      * @param string|false $segment (Optional) Custom segment to filter the report.
      *                              Example: "referrerName==twitter.com"
      *                              Supports AND (;) and OR (,) operators.
-     *                              [See documentation:](https://developer.matomo.org/api-reference/reporting-api-segmentation)
+     *                              [See documentation](https://developer.matomo.org/api-reference/reporting-api-segmentation)
      * @return \Piwik\DataTable|\Piwik\DataTable\Map Provider metrics by internet provider label.
      * @throws \Exception If the current user does not have view access to the requested site(s).
      */
