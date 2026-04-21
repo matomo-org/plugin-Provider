@@ -1,6 +1,9 @@
 ## Changelog
 
 ### 5.0.5
+* 27/04/2026 Updated API documentation
+
+### 5.0.5
 * 02/03/2026 Updated API documentation
 
 ### 5.0.4
