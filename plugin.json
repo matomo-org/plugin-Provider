@@ -1,6 +1,6 @@
 {
   "name": "Provider",
-  "version": "5.0.6",
+  "version": "5.1.0",
   "description": "Reports the Internet Service Provider of the visitors.",
   "theme": false,
   "keywords": ["provider", "internet", "service", "report"],

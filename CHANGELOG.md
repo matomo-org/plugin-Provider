@@ -1,5 +1,8 @@
 ## Changelog
 
+### 5.1.0 - 2026-08-24
+* Added code to skip_reverse_dns_lookup based on config value
+
 ### 5.0.6 - 2026-04-27
 * Updated API documentation
 
