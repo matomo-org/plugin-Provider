@@ -12,6 +12,7 @@ namespace Piwik\Plugins\Provider\Columns;
 
 use Matomo\Network\IP;
 use Piwik\Common;
+use Piwik\Plugins\Provider\Configuration;
 use Piwik\Plugins\Provider\Provider as ProviderPlugin;
 use Piwik\Plugins\UserCountry\LocationProvider;
 use Piwik\Tracker\Action;
@@ -61,6 +62,14 @@ class Provider extends \Piwik\Plugins\UserCountry\Columns\Base
 
         if (!empty($org)) {
             return $org;
+        }
+
+        // Neither the ISP nor the organisation could be determined, eg because no ISP or ASN
+        // database is configured. Resolving the provider then requires a DNS reverse lookup,
+        // which is a blocking and uncached request that can slow down tracking considerably.
+        if ((new Configuration())->shouldSkipReverseDnsLookup()) {
+            Common::printDebug('No ISP or organisation found, the Provider DNS reverse lookup is disabled so we skip it...');
+            return false;
         }
 
         // Adding &dp=1 will disable the provider plugin, this is an "unofficial" parameter used to speed up log importer

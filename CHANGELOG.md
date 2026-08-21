@@ -2,6 +2,7 @@
 
 ### 6.0.0
 * Compatibility with Matomo 6
+* Added code to skip_reverse_dns_lookup based on config value
 
 ### 5.0.6 - 2026-04-27
 * Updated API documentation
