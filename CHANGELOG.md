@@ -1,5 +1,8 @@
 ## Changelog
 
+### 6.0.1
+* Updated the German and Chinese (Traditional) translations
+
 ### 6.0.0
 * Compatibility with Matomo 6
 * Added code to skip_reverse_dns_lookup based on config value
