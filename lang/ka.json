@@ -1,9 +1,6 @@
 {
     "Provider": {
         "ColumnProvider": "პროვაიდერი",
-        "PluginDescription": "",
-        "ProviderReportDocumentation": "",
-        "ProviderReportFooter": "",
         "WidgetProviders": "პროვაიდერები"
     }
 }
