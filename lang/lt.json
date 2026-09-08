@@ -1,6 +1,9 @@
 {
     "Provider": {
         "ColumnProvider": "IP tiekėjas",
+        "PluginDescription": "",
+        "ProviderReportDocumentation": "",
+        "ProviderReportFooter": "",
         "WidgetProviders": "IP tiekėjai"
     }
 }
