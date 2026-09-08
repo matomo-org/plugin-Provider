@@ -1,6 +1,9 @@
 {
     "Provider": {
         "ColumnProvider": "Internetszolgáltató",
+        "PluginDescription": "",
+        "ProviderReportDocumentation": "",
+        "ProviderReportFooter": "",
         "WidgetProviders": "Internetszolgáltatók"
     }
 }
