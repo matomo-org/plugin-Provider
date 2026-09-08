@@ -1,9 +1,6 @@
 {
     "Provider": {
         "ColumnProvider": "Teenusepakkuja",
-        "PluginDescription": "",
-        "ProviderReportDocumentation": "",
-        "ProviderReportFooter": "",
         "WidgetProviders": "Teenusepakkujad"
     }
 }
