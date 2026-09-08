@@ -1,7 +1,9 @@
 {
     "Provider": {
         "ColumnProvider": "Nhà cung cấp",
+        "PluginDescription": "",
         "ProviderReportDocumentation": "Báo cáo này cho thấy Nhà cung cấp dịch vụ Internet mà khách truy cập sử dụng để truy cập website. Bạn có thể ckick trên tên nhà cung cấp để biết thêm chi tiết. %s Nếu Matomo không thể xác định được nhà cung cấp của khách truy cập, nó liệt kê danh sách IP.",
+        "ProviderReportFooter": "",
         "WidgetProviders": "Các nhà cung cấp"
     }
 }
