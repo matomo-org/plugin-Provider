@@ -1,9 +1,6 @@
 {
     "Provider": {
         "ColumnProvider": "Veitandi",
-        "PluginDescription": "",
-        "ProviderReportDocumentation": "",
-        "ProviderReportFooter": "",
         "WidgetProviders": "Veitendur"
     }
 }

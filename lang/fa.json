@@ -1,9 +1,6 @@
 {
     "Provider": {
         "ColumnProvider": "ارائه دهنده خدمات",
-        "PluginDescription": "",
-        "ProviderReportDocumentation": "",
-        "ProviderReportFooter": "",
         "WidgetProviders": "ارائه دهندگان"
     }
 }
