@@ -1,6 +1,9 @@
 {
     "Provider": {
         "ColumnProvider": "Poskytovateľ",
+        "PluginDescription": "",
+        "ProviderReportDocumentation": "",
+        "ProviderReportFooter": "",
         "WidgetProviders": "Poskytovatelia"
     }
 }
