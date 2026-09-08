@@ -1,6 +1,9 @@
 {
     "Provider": {
         "ColumnProvider": "ผู้ให้บริการ",
+        "PluginDescription": "",
+        "ProviderReportDocumentation": "",
+        "ProviderReportFooter": "",
         "WidgetProviders": "ผู้ให้บริการ"
     }
 }
