@@ -1,9 +1,6 @@
 {
     "Provider": {
         "ColumnProvider": "አቅራቢ",
-        "PluginDescription": "",
-        "ProviderReportDocumentation": "",
-        "ProviderReportFooter": "",
         "WidgetProviders": "አቅራቢዎች"
     }
 }
