@@ -64,6 +64,7 @@ class Provider extends \Piwik\Plugin
         if (empty($off) || is_numeric($ext) || strlen($hostname) < 5) {
             return 'Ip';
         } else {
+            /** @var string|null $cleanHostname */
             $cleanHostname = null;
 
             /**
