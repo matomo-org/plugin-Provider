@@ -34,8 +34,9 @@ function getHostnameName($in)
 /**
  * Return URL for a given domain name
  *
- * @param string $in hostname
- * @return string URL
+ * @param string|null $in hostname
+ * @return string|null URL, or null where there is nothing to link to: the summary row,
+ *                      an empty hostname, and the 'ip' label
  */
 function getHostnameUrl($in)
 {
@@ -63,10 +64,7 @@ function getPrettyProviderName($in)
 
     $prettyNames = Common::getProviderNames();
 
-    if (
-        is_array($prettyNames)
-        && array_key_exists(strtolower($providerName), $prettyNames)
-    ) {
+    if (array_key_exists(strtolower($providerName), $prettyNames)) {
         $providerName = $prettyNames[strtolower($providerName)];
     }
 
