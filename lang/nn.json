@@ -1,1 +1,9 @@
-{}
+{
+    "Provider": {
+        "ColumnProvider": "Leverandør",
+        "PluginDescription": "Rapporterer internettleverandøren til dei besøkande.",
+        "ProviderReportDocumentation": "Denne rapporten viser kva internettleverandørar dei besøkande brukte for å kome til nettstaden. Du kan klikke på namnet på ein leverandør for meir informasjon. %s Viss Matomo ikkje kan finne leverandøren til ein besøkande, blir han ført opp som IP.",
+        "ProviderReportFooter": "Ukjend leverandør tyder at IP-adressa ikkje kunne slåast opp.",
+        "WidgetProviders": "Leverandørar"
+    }
+}
