@@ -1,5 +1,8 @@
 ## Changelog
 
+### 6.0.2 - 2026-11-23
+* Updated translations
+
 ### 6.0.1
 * Updated the German and Chinese (Traditional) translations
 
